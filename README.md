@@ -62,7 +62,7 @@ homework-mvc/
 ├── app.js # App entry point
 ├── package.json
 └── README.md
-```bash
+bash```
 yaml
 Копировать
 
@@ -76,7 +76,7 @@ yaml
    cd homework-mvc
 Install dependencies
 
-bash
+```bash
 Копировать
 npm install
 Set up environment variables
