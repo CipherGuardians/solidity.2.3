@@ -33,7 +33,7 @@ This project was created as part of university coursework to demonstrate practic
 ---
 
 ## Project Structure
-
+```bash
 homework-mvc/
 │
 ├── config/
@@ -62,7 +62,7 @@ homework-mvc/
 ├── app.js                # App entry point
 ├── package.json
 └── README.md
-
+bash```
 ## How to Run
 
 1. **Clone the repository**
