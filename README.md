@@ -62,7 +62,7 @@ homework-mvc/
 ├── app.js # App entry point
 ├── package.json
 └── README.md
-
+```bash
 yaml
 Копировать
 
