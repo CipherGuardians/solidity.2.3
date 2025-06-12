@@ -2,8 +2,7 @@
 
 ## Description
 
-A simple application for managing homework and personal tasks.  
-This project was created as part of university coursework to demonstrate practical skills in Node.js, the MVC pattern, and Server-Side Rendering (SSR).
+The Homework Management System is a web application for managing homework assignments. It allows users to add, edit, complete, filter, and delete tasks with deadlines. The project demonstrates the use of the MVC architecture with Node.js, server-side rendering using EJS, and MongoDB for persistent storage.
 
 ---
 
@@ -13,8 +12,8 @@ This project was created as part of university coursework to demonstrate practic
 - Edit existing tasks
 - Mark tasks as completed
 - Delete tasks
-- **Overdue tasks are highlighted** in the interface
-- **Sort/filter tasks by deadline or by completion status** ("All tasks", "Only active", "Only completed")
+- Overdue tasks are highlighted in the interface
+- Sort/filter tasks by deadline or by completion status** ("All tasks", "Only active", "Only completed")
 - Simple and clear web interface (minimum styling for readability)
 
 ---
@@ -31,6 +30,14 @@ This project was created as part of university coursework to demonstrate practic
 - **nodemon** (dev only) — auto-reload during development
 
 ---
+## External Libraries Used
+
+- [express](https://expressjs.com/) — Web framework for Node.js
+- [ejs](https://ejs.co/) — Template engine for server-side rendering
+- [mongodb](https://www.npmjs.com/package/mongodb) — Official MongoDB driver
+- [dotenv](https://www.npmjs.com/package/dotenv) — For environment variable management
+- [method-override](https://www.npmjs.com/package/method-override) — Middleware for supporting PUT/DELETE in forms
+
 
 ## Project Structure
 ```bash
@@ -59,34 +66,39 @@ homework-mvc/
 │
 ├── .env                  # Environment variables (MongoDB URI etc.)
 ├── .gitignore
-├── app.js                # App entry point
+├── app.js                # Main server file
 ├── package.json
 └── README.md
-bash```
+```
+
 ## How to Run
 
 1. **Clone the repository**
-   git clone https://github.com/yourusername/homework-mvc.git
-   cd homework-mvc
-
+```bash
+   git clone https://github.com/tinomu85/System-zarzadzania-zadaniami-domowymi
+   
+```
 2. **Install dependencies**
+```bash
    npm install
-
+```
 3. **Set up environment variables**
    Create a .env file in the root directory:
-
+```bash
    PORT=3000
    MONGO_URI=mongodb://localhost:27017/homeworkdb
-
+```
 4. **Run MongoDB**
    Make sure your MongoDB server is running (by default on mongodb://localhost:27017).
 
 5. **Start the server**
-   npm start
-
+```bash
+   node app.js
+```
    For development with auto-reload:
-   npm run dev
-
+```bash
+   nodemon app.js
+```
 6. **Open in browser:**
    http://localhost:3000
 
@@ -105,16 +117,7 @@ bash```
 
 ---
 
-## Example Input
 
-Add task form:
-- **Title:** Math homework
-- **Description:** Solve problems 5–10 on page 37.
-- **Deadline:** 2024-06-13 20:00
-
-Mark as done: Click "Done" next to task.
-
----
 
 ## About MVC Implementation
 
@@ -127,6 +130,4 @@ Mark as done: Click "Done" next to task.
 
 ---
 
-## License
 
-For educational/university use only.
